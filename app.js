@@ -10,8 +10,13 @@ function render(){
 }
 function addTodo(){
      ul.innerHTML = "";
+     if(todo.value.trim() == ''){
+        arr = [];
+     }
+     else{
     arr.push(todo.value);
     render();
+     }
       todo.value = "";
 }
 function Delete(i){
