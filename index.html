@@ -11,8 +11,18 @@
     <div class="flex flex-col flex-wrap items-stretch">
     
     <div><h1 class="text-center m-10 text-4xl font-serif text-white">Todo App</h1></div>
-    <div class="flex flex-wrap justify-center"><div class="w-1/3"><input class="rounded-xl px-4 py-1 w-96" type="text" placeholder="Enter Todo" id="todo">
-    <button class="bg-teal-500 px-4 py-1 rounded-xl text-white" onclick="addTodo()">Add</button></div></div>
+
+    <div class="flex flex-wrap justify-center">
+    
+        <form class="w-1/3" id="form">
+    
+        <input class="rounded-xl px-4 py-1 w-96" type="text" placeholder="Enter Todo" id="todo">
+        <button class="bg-teal-500 px-4 py-1 rounded-xl text-white" type="submit">Add</button>
+    <!-- <button class = "bg-red-500 px-4 py-1 rounded-xl text-white" onclick="deleteAll()">Delete All</button> -->
+    
+        </form>
+
+    </div>
 
     <!-- <div class="flex flex-wrap items-stretch"> -->
     <ul id="ul" class="flex flex-wrap flex-col text-center items-stretch bg-slate-600 m-1">
@@ -21,6 +31,6 @@
     <!-- </div> -->
     
      </div>
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
